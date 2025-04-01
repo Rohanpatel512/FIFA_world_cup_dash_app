@@ -62,7 +62,7 @@ app.layout = html.Div([
 ])
 
 
-@callback(
+@app.callback(
     [Output('won_world_cup', 'children'),
      Output('year_winner_runnerup', 'children')],
     [Input('country_dropdown', 'value'),
@@ -90,7 +90,7 @@ def get_world_cup_info(country, year):
     
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run_server(debug=False)
 
 
 
