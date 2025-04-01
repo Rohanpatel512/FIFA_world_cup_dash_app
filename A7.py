@@ -21,7 +21,7 @@ dataset = pd.read_csv("FIFA_data.csv", delimiter=';')
 # In[16]:
 
 
-app = dash.Dash()
+app = dash.Dash(__name__)
 server = app.server
 
 countries = np.concatenate([np.array(dataset['Winners']), np.array(dataset['Runners-up'])])
