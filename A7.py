@@ -90,7 +90,7 @@ def get_world_cup_info(country, year):
     
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=False)
 
 
 
